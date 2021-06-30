@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'home/assets/css/style_home.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>VimeoBrute</title>
+    <!-- <link rel="shortcut icon" href="/assets/images/1.png" type="image/x-icon"> -->
+
+
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__iner">
+      <!-- <div class="header__logo">VimeoBrute</div> -->
+      <nav class="header__logo">
+        <a class="nav_logo" href="../home">VimeoBrute</a>
+      </nav>
+      <nav class="nav">
+        <a class="nav_link" href="../category#international">International</a>
+        <a class="nav_link" href="../category#economy">Economy</a>
+        <a class="nav_link" href="../category#science-and-technology">Science and Technology</a>
+        <a class="nav_link" href="../category#entertainment">Entertainment</a>
+        <a class="nav_link" href="../category#sport">Sports</a>
+        <a class="nav_link" href="../category#health">Health</a>
+        <a class="nav_link" href="../category#nature">Nature</a>
+      </nav>
+      <nav class="auth">
+        <a class="auth_link" href="#login">Login</a>
+        <a class="auth_link" href="#sign">Sign</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="container">
+    <div class="container__title">
+      <div class="intro__inner">
+        <div class="intro__title">
+          <h2 class="intro__suptitle">Заголовок новости</h2>
+          <h1 class="intro__description">
+            Текст новости Текст новости
+            Текст новости Текст новости
+            Текст новости Текст новости
+            Текст новости
+          </h1>
+        </div>
+        <div class="intro__about">
+          <div class="intro__item">
+            <div class="intro__img">
+              <img src="{% static 'home/assets/image/gelary.png' %}" width="100%" height="100%" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class='section'>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#international">International</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#international/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#international/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#international/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#international/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#economy">Economy</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#economy/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#economy/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#economy/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#economy/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#science-and-technology">Science and Technology</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#science-and-technology/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#science-and-technology/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#science-and-technology/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#science-and-technology/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#entertainment">Entertainment</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#entertainment/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#entertainment/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#entertainment/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#entertainment/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#sport">Sport</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#sport/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#sport/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#sport/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#sport/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#health">Health</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#health/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#health/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#health/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#health/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#nature">Nature</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#nature/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#nature/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#nature/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#nature/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container__cat">
+    <div class="section__header">
+      <!-- <h1 class="section_title">Category</h1> -->
+      <a class="link_category" href="../category#text-news">Text News</a>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#text-news/img1">
+            <img src="{% static 'home/assets/image/1.png' %}" alt="">
+          </a>
+          <!-- <p class="description__img">description about image</p> -->
+        </div>
+        <!-- <p>description about image</p> -->
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#text-news/img2">
+            <img src="{% static 'home/assets/image/2.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#text-news/img3">
+            <img src="{% static 'home/assets/image/3.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <a href="../showNews#text-news/img4">
+            <img src="{% static 'home/assets/image/4.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="inform">
+  <div class="container">
+    <div class="inf">
+      <div class="inf__item">
+        <div class="inf_logo">VimeoBrute</div>
+      </div>
+      <div class="inf__item">
+        <div class="inf_page">VimeoName</div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#international">International</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#economy">Economy</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#science-and-technology">Science and Technology</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#entertainment">Entertainment</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#sport">Sport</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#health">Health</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#nature">Nature</a>
+        </div>
+        <div class="inf_site">
+          <a class="inf_inter" href="../category#text-news">Text News</a>
+        </div>
+
+      </div>
+      <div class="inf__item">
+        <div class="inf_inter">
+          <a class="inf_inter" href="#offer-news">Предложить новость</a>
+        </div>
+        <div class="inf_inter">
+          <a class="inf_inter" href="#support">Обратная связь</a>
+        </div>
+      </div>
+      <div class="inf__item">
+        <div class="inf_contact">Наши контакты</div>
+        <div class="inf_text">+78888888888</div>
+        <div class="inf_text ">adm@mail.com</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

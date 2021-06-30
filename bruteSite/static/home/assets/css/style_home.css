@@ -1,0 +1,532 @@
+body {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+
+/* Container */
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  /* background: red; */
+}
+
+.container__title{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container__title::after{
+  content: "";
+  display: flex;
+  width: 0%;
+  margin: 50px auto ;
+  background: #ffdd00;
+  height: 3px;
+}
+
+
+/* Intro */
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* background: #ffefc7; */
+  /* background: red; */
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.intro__inner{
+width: 100%;
+max-width: 880px;
+margin: 0 auto;
+text-align: center;
+display: flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+
+.intro__title{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  line-height: 1;
+}
+
+.intro__suptitle{
+  margin-top: 10%;
+  /* margin-bottom: 50%; */
+  /* margin-right: 20%; */
+  margin-left:-20%;
+  width: 100%;
+  max-width: 100%;
+  font-family: "Kaushan Script", cursive;
+  font-size: 36px;
+  color: black;
+  /* text-align: center; */
+  text-align: left;
+}
+
+.intro__description{
+  margin-top: 20%;
+  margin-left: -20%;
+  width: 70%;
+  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  align-items: left;
+  line-height: 1.25;
+}
+
+
+.intro__about{
+  margin-top: 5%;
+  width: 80%;
+  max-width: 80%;;
+  line-height: 1;
+  align-items: center;
+}
+
+.intro_item{
+  width: auto;
+  height: auto;
+}
+
+.intro__item:hover .intro__img img {
+  opacity: 0.7;
+}
+
+.intro__img{
+  background: red;
+  background: linear-gradient(to bottom,#ff0000,#f3dd00)
+}
+
+.intro__img img{
+  display: block;
+  transition: opacity .2s linear;
+}
+
+
+
+/* Header */
+.header{
+  /* padding-top: 10px; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #dfdfdf;
+  /* background: red; */
+}
+
+.header::after{
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto 0;
+  background: #aaaaaa;
+}
+
+.header__iner{
+  /* padding-top: 36px; */
+  padding-top: 24px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  /* background: red; */
+  /* background: #dfdfdf; */
+}
+
+
+/* Nav */
+.nav{
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  /* background: red; */
+}
+
+.nav_link{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px;
+  padding-bottom: 12px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  position: relative;
+  /* background: #dfdfdf; */
+}
+
+.nav_link::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background:#ffdd00;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.nav_link:hover{
+  color: #ffdd00;
+}
+
+.nav_link:hover::after,
+.nav_link.active:after{
+  opacity: 1;
+}
+
+.nav_link.active{
+  color #ffdd00;
+}
+
+
+/* Nav logo */
+.header__logo{
+  margin: 0 30px auto;
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav_logo{
+  color: #000000;
+  font-family: "Kaushan Script", cursive;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  position: relative;
+  padding-bottom: 50px;
+  /* background: #dfdfdf; */
+}
+.nav_logo::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  background:#ffdd00;
+  top: 90%;
+  left:0;
+  z-index:1;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.nav_logo:hover{
+  color:#ffdd00;
+}
+
+.nav_logo:hover::after{
+  opacity: 1;
+}
+
+
+/* Authentification */
+.auth{
+  margin: 0 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  /* background: red; */
+}
+
+.auth_link{
+  padding-bottom: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  position: relative;
+  /* background: red; */
+}
+
+.auth_link:after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  background:#ffdd00;
+  top:100%;
+  left:0;
+  z-index:1;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.auth_link:hover{
+  color:#ffdd00;
+}
+
+.auth_link:hover::after{
+  opacity: 1;
+}
+
+
+/* Button */
+/* .btn__about{ */
+  /* width: 100%; */
+  /* height: 10%; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* max-width: 100%; */
+  /* position: absolute; */
+  /* z-index: 1; */
+/* } */
+
+/* .btn{ */
+  /* margin: -15px auto; */
+  /* display:inline-block; */
+  /* vertical-align: top; */
+  /* border: 3px solid #ffdd00; */
+  /* padding: 8px 30px; */
+  /* font-size: 14px; */
+  /* font-weight: 700; */
+  /* color: #ffdd00; */
+  /* text-transform: uppercase; */
+  /* text-decoration: none; */
+  /* transition: background .1s linear, */
+  /* color .1s linear; */
+/* } */
+
+/* .btn:hover{ */
+  /* background-color: #ffdd00; */
+  /* color: #fff; */
+/* } */
+
+
+/* Section */
+.section{
+  /* background: #98f6ab; */
+  /* background: red; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section::before{
+  content: "";
+  display: flex;
+  width:100%;
+  height: 1px;
+  margin: -80px auto 80px ;
+  background: #aaaaaa;
+  /* background: red; */
+}
+
+.section::after{
+  content: "";
+  display: flex;
+  width:100%;
+  height: 1px;
+  margin: 120px auto -80px;
+  background: #aaaaaa;
+}
+
+.section__header{
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto 10px;
+  text-align: left;
+  /* background: #ffdd00; */
+}
+
+
+.section_title{
+  margin-bottom: 5%;
+  font-size: 24px;
+  color: #333;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  /* background: #ffdd00; */
+}
+
+
+/* Container_Cat */
+.container__cat{
+  width: 100%;
+  max-width: 100%;
+  margin: -30px auto;
+  /* background: red; */
+}
+
+.container__cat::after{
+  content: "";
+  display: flex;
+  width:94.5%;
+  /* width:100%; */
+  height: 2px;
+  margin: 50px auto ;
+  background: #aaaaaa;
+}
+
+
+/* Link_category */
+.link_category{
+  margin-top: 20px;
+  margin-left: 1%;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: color0.2s linear;
+  position: relative;
+  /* background: #ffdd00; */
+}
+
+.link_category::after{
+content: "";
+width: 100%;
+height: 3px;
+display: block;
+position: absolute;
+background: #17e3b3;
+top:100%;
+left: 0;
+z-index: 1;
+opacity: 0;
+transition: opacity 0.2s linear;
+}
+
+.link_category:hover{
+  color:#17e3b3;
+}
+
+.link_category:hover::after,
+.link_category.active:after{
+  opacity: 1;
+}
+
+.link_category.active{
+  color: #17e3b3;
+}
+
+
+/* About */
+.about{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.about_item{
+  width: auto;
+  height: 180px;
+  /* background: #ffefc7; */
+  background: white;
+  margin: 0 0% auto;
+}
+
+.about_item:hover .about_img {
+  transform: translate3d(-10px,-10px,0px);
+}
+
+.about_item:hover .about_img img {
+  opacity: 0.7;
+}
+
+.about_img{
+  background: linear-gradient(to bottom,#ad1a1a,#d09900);
+  transition: transform .3s linear;
+}
+
+.about_img img{
+  display: block;
+  transition: opacity .3s linear;
+}
+
+/* Inform */
+.inform{
+  /* background-color: #2d3368; */
+  background-color: #aaaaaa;
+}
+
+.inf{
+  display: flex;
+}
+
+.inf__item{
+  color: #fff;
+  flex: 1 1 0;
+  /* border-left: 1px solid #b5eae0; */
+  /* padding: 70px 25px; */
+  padding: 3% 3%;
+  margin-right:0 auto;
+}
+
+.inf__item:last-child{
+  border-right: 1px solid #b5eae0;
+}
+
+.inf_logo{
+  font-size: 36px;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+.inf_page{
+  font-family: "Kaushan Script", cursive;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.inf_site{
+  /* padding: 25% 0%; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+.inf_text{
+  font-size: 14px;
+  text-align: left;
+}
+
+.inf_inter{
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+.inf_contact{
+  font-weight: 700;
+}
